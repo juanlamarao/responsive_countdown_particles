@@ -165,101 +165,52 @@ body div ul li p {
 	}
 }
 
-/* switch do particlesJS */
-/*.onoffswitch {
-	position: relative; width: 18vw;
-	right: 0; top: 0; margin: 1vw;
-    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+/* switch button */
+.particles-switch {
+	position: absolute; width: 65px;
+	right: 0;
+	top: 0;
+	margin: 5px;
+	-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
 }
-.onoffswitch-checkbox {
-    display: none;
+.particles-switch-checkbox {
+	display: none;
 }
-.onoffswitch-label {
-    display: block; overflow: hidden; cursor: pointer;
-    border: 2px solid #999999; border-radius: 20px;
+.particles-switch-label {
+	display: block; overflow: hidden; cursor: pointer;
+	border: 1px solid #999999; border-radius: 10px;
 }
-.onoffswitch-inner {
-    display: block; width: 200%; margin-left: -100%;
-    transition: margin 0.3s ease-in 0s;
+.particles-switch-inner {
+	display: block; width: 200%; margin-left: -100%;
+	transition: margin 0.3s ease-in 0s;
 }
-.onoffswitch-inner:before, .onoffswitch-inner:after {
-    display: block; float: left; width: 50%; height: 6vw; padding: 0; line-height: 6vw;
-    font-size: 0.8rem; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
-    box-sizing: border-box;
+.particles-switch-inner:before, .particles-switch-inner:after {
+	display: block; float: left; width: 50%; height: 20px; padding: 0; line-height: 20px;
+	font-size: 12px; color: white; font-weight: bold;
+	box-sizing: border-box;
 }
-.onoffswitch-inner:before {
-    content: "GRID";
-    padding-left: 2vw;
-    background-color: #EEEEEE; color: #999999;
+.particles-switch-inner:before {
+	content: "GRID";
+	padding-left: 6px;
+	background-color: #d1d1d1; color: #999999;
 }
-.onoffswitch-inner:after {
-    content: "STARS";
-    padding-right: 2vw;
-    background-color: #EEEEEE; color: #999999;
-    text-align: right;
+.particles-switch-inner:after {
+	content: "STARS";
+	padding-right: 6px;
+	background-color: #d1d1d1; color: #999999;
+	text-align: right;
 }
-.onoffswitch-switch {
-    display: block; width: 3.6vw; margin: 1.2vw;
-    background: #FFFFFF;
-    position: absolute; top: 0; bottom: 0;
-    right: 11.2vw;
-    border: 0.4vw solid #999999; border-radius: 4vw;
-    transition: all 0.3s ease-in 0s;
+.particles-switch-switch {
+	display: block; width: 8px; margin: 6px;
+	background: #ebeaea;
+	position: absolute; top: 0; bottom: 0;
+	right: 44px;
+	border: 1px solid #999999; border-radius: 20px;
+	transition: all 0.3s ease-in 0s;
 }
-.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
-    margin-left: 0;
+.particles-switch-checkbox:checked + .particles-switch-label .particles-switch-inner {
+	margin-left: 0;
 }
-.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
-    right: 0px;
+.particles-switch-checkbox:checked + .particles-switch-label .particles-switch-switch {
+	right: 0px;
 }
-
-@media only screen and (min-width: 900){*/
-	.onoffswitch {
-		position: relative; width: 65px;
-		right: 0;
-		top: 0;
-		margin: 5px;
-		-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
-	}
-	.onoffswitch-checkbox {
-		display: none;
-	}
-	.onoffswitch-label {
-		display: block; overflow: hidden; cursor: pointer;
-		border: 1px solid #999999; border-radius: 10px;
-	}
-	.onoffswitch-inner {
-		display: block; width: 200%; margin-left: -100%;
-		transition: margin 0.3s ease-in 0s;
-	}
-	.onoffswitch-inner:before, .onoffswitch-inner:after {
-		display: block; float: left; width: 50%; height: 20px; padding: 0; line-height: 20px;
-		font-size: 12px; color: white; font-weight: bold;
-		box-sizing: border-box;
-	}
-	.onoffswitch-inner:before {
-		content: "GRID";
-		padding-left: 6px;
-		background-color: #d1d1d1; color: #999999;
-	}
-	.onoffswitch-inner:after {
-		content: "STARS";
-		padding-right: 6px;
-		background-color: #d1d1d1; color: #999999;
-		text-align: right;
-	}
-	.onoffswitch-switch {
-		display: block; width: 8px; margin: 6px;
-		background: #ebeaea;
-		position: absolute; top: 0; bottom: 0;
-		right: 44px;
-		border: 1px solid #999999; border-radius: 20px;
-		transition: all 0.3s ease-in 0s;
-	}
-	.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
-		margin-left: 0;
-	}
-	.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
-		right: 0px;
-	}
-/*}*/

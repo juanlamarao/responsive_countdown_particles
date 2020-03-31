@@ -207,7 +207,7 @@ const starsJson = {
 particlesJS("my-particles", gridJson);
 
 function changeParticles() {
-	const checkBox = document.getElementById('myonoffswitch');
+	const checkBox = document.getElementById('particles-switch');
 
 	if (checkBox.checked == true) {
 		particlesJS("my-particles", gridJson);
