@@ -5,10 +5,14 @@ html {
 }
 
 body {
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 	font-family: 'Roboto', sans-serif;
-	background: radial-gradient(circle, rgb(255, 166, 50) 0%, rgb(223, 132, 28) 100%);
+	background: rgba(0, 0, 0, 0.856);
+	background-image: url('images/sky1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 100% 100%;
 }
 
 body, h1, h3, ul, li, span, p {
@@ -24,13 +28,8 @@ body div ul li p {
 }
 #my-particles{
 	position:absolute;
-	width: 100%;
-	height: 100%;
-	background-color: #000000;
-	background-image: url('images/sky1.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: 100% 100%;
+	width: 100vw;
+	height: 100vh;
 }
 
 .container {
@@ -145,24 +144,6 @@ body div ul li p {
 	content: "";
 	clear: both;
 	display: table;
-}
-
-@media (max-width: 400px) {
-	html {
-		font-size: 12px;
-	}
-	.container ul li {
-		width: -10px;
-		height: -15px;
-		margin: 0px 3px;
-	}
-	.container ul li .counter {
-		padding-top: -10px;
-		padding-bottom: -10px;
-	}
-	.container ul li .counter-description {
-		margin-top: -10px;
-	}
 }
 
 /* switch button */
