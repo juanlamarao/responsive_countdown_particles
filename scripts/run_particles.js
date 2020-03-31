@@ -54,7 +54,7 @@ const gridJson = {
 		},
 		"move": {
 			"enable": true,
-			"speed": 2,
+			"speed": 1,
 			"direction": "none",
 			"random": false,
 			"straight": false,
@@ -206,20 +206,12 @@ const starsJson = {
 
 particlesJS("my-particles", gridJson);
 
-function grid() {
-	particlesJS("my-particles", gridJson);
+function changeParticles() {
+	const checkBox = document.getElementById('myonoffswitch');
+
+	if (checkBox.checked == true) {
+		particlesJS("my-particles", gridJson);
+	} else {
+		particlesJS("my-particles", starsJson);
+	}
 }
-
-function stars() {
-	particlesJS("my-particles", starsJson);
-}
-
-document.getElementById("button-submit").addEventListener("click", function (event) {
-	event.preventDefault();
-	stars();
-});
-
-document.getElementById("link").addEventListener("click", function (event) {
-	event.preventDefault();
-	grid();
-});
