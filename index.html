@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Wait For It</title>
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+	<div id="my-particles">
+		<!-- switch do particlesJS
+		<div class="onoffswitch">
+			<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+			<label class="onoffswitch-label" for="myonoffswitch">
+				<span class="onoffswitch-inner"></span>
+				<span class="onoffswitch-switch"></span>
+			</label>
+		</div>
+		-->
+		<div class="container">
+			<p class="logo">&lt;LOGO_HERE&gt;</p>
+			<h1 class="slogan">Wait for it!</h1>
+			<h3>we'll be back soon..</h3>
+			<ul class="countdown-container">
+				<li class="countdown-el">
+					<p class="counter" id="days"></p>
+					<p class="counter-description">DAYS</p>
+				</li>
+				<li class="countdown-el">
+					<p class="counter" id="hours"></p>
+					<p class="counter-description">HOURS</p>
+				</li>
+				<li class="countdown-el">
+					<p class="counter" id="minutes"></p>
+					<p class="counter-description">MIN</p>
+				</li>
+				<li class="countdown-el">
+					<a href="#" id="link">
+						<p class="counter" id="seconds"></p>
+					</a>
+					<p class="counter-description">SECS</p>
+				</li>
+			</ul>
+			<form class="more-info">
+				<input placeholder="E-mail" />
+				<button id="button-submit" type="submit" onclick="stars()">NOTIFY ME</button>
+		</div>
+		<!--<span id="output">funcionando</span>-->
+	</div>
+	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<script src="./scripts/countdown.js"></script>
+	<script src="./scripts/run_particles.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+
+html {
+	font-size: 3vw;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Roboto', sans-serif;
+	background: radial-gradient(circle, rgb(255, 166, 50) 0%, rgb(223, 132, 28) 100%);
+}
+
+body, h1, h3, ul, li, span, p {
+	margin: 0;
+	padding: 0;
+	color: #d1d1d1;
+}
+
+body div ul li p {
+	margin: 0;
+	padding: 0;
+}
+#my-particles{
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	background-image: url('../images/sky3.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 100% 100%;
+}
+
+.container {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	align-content: center;
+	justify-items: center;
+}
+
+.container .logo {
+	font-size: 1rem;
+	margin-bottom: 5vh;
+}
+
+.container .slogan {
+	font-size: 1.75rem;
+	font-weight: bold;
+}
+
+.container h3 {
+	font-size: 1rem;
+	font-weight: lighter;
+	margin-bottom: 1vh;
+}
+
+.container ul {
+	list-style: none;
+	margin-bottom: 2vh;
+}
+
+.countdown-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	justify-items: center;
+	align-items: center;
+}
+
+.container ul li {
+	width: 10vw;
+	height: 13vw;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	margin: 0px 1vw;
+}
+
+.container ul li .counter {
+	font-size: 1.75rem;
+	font-weight: bold;
+	padding-top: 1vw;
+}
+
+.container ul li .counter-description {
+	font-size: 0.6rem;
+	margin-top: -3vw;
+}
+
+.container .more-info input {
+	box-sizing: border-box;
+	padding: 1vw;
+	font-size: 0.8rem;
+	border: 1px solid grey;
+	float: left;
+	width: 30vw;
+	background: rgba(255, 255, 255, 0.281);
+}
+
+.container .more-info input::-webkit-input-placeholder { /* Edge */
+	color: #d1d1d1;
+}
+
+.container .more-info input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: #d1d1d1;
+}
+
+.container .more-info input::placeholder {
+	color: #d1d1d1;
+}
+
+.container .more-info input:focus {
+	outline: none;
+	border-top: 1px solid rgba(255, 145, 0, 0.904);
+	border-left: 1px solid rgba(255, 145, 0, 0.904);
+	border-bottom: 1px solid rgba(255, 145, 0, 0.904);
+}
+
+.container .more-info input:focus ~ button {
+	border-top: 1px solid rgba(255, 145, 0, 0.904);
+	border-right: 1px solid rgba(255, 145, 0, 0.904);
+	border-bottom: 1px solid rgba(255, 145, 0, 0.904);
+}
+
+.container .more-info button {
+	float: left;
+	width: 22vw;
+	padding: 0.33rem;
+	font-size: 0.8rem;
+	background: #2196F3;
+	color: #d1d1d1;
+	border: 1px solid grey;
+	border-left: none; /* Prevent double borders */
+	cursor: pointer;
+	animation: background 0.2s;
+}
+
+.container .more-info button:hover {
+	background: rgb(25, 112, 184);
+}
+.container .more-info::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+#output {
+	display: none;
+}
+
+@media (max-width: 400px) {
+	html {
+		font-size: 12px;
+	}
+	.container ul li {
+		width: -10px;
+		height: -15px;
+		margin: 0px 3px;
+	}
+	.container ul li .counter {
+		padding-top: -10px;
+		padding-bottom: -10px;
+	}
+	.container ul li .counter-description {
+		margin-top: -10px;
+	}
+}
+
+/* switch do particlesJS
+.onoffswitch {
+	display: absolute;
+    position: absolute; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "STARS";
+    padding-left: 10px;
+    background-color: #EEEEEE; color: #999999;
+}
+.onoffswitch-inner:after {
+    content: "GRID";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+}
+*/
